@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>LEGO Cancer Lab</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+
+.brick {
+
+display:inline-block;
+
+padding:20px 30px;
+
+margin:15px;
+
+background:#e63946;
+
+color:white;
+
+font-weight:bold;
+
+border-radius:5px;
+
+box-shadow:0 5px #9d0208;
+
+cursor:pointer;
+
+}
+
+
+.brick:hover {
+
+transform:translateY(-5px);
+
+}
+
+
+#info {
+
+margin:30px;
+
+padding:20px;
+
+background:white;
+
+border-radius:10px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1>🧬 LEGO Cancer Lab 🧱</h1>
+
+<p>
+Explore cancer biology by rebuilding concepts with LEGO.
+</p>
+
+
+<div class="brick" onclick="showInfo('Mutation')">
+Mutation
+</div>
+
+
+<div class="brick" onclick="showInfo('Tumor')">
+Tumor
+</div>
+
+
+<div class="brick" onclick="showInfo('Metastasis')">
+Metastasis
+</div>
+
+
+<div id="info">
+Click a LEGO brick!
+</div>
+
+
+
+<script>
+
+function showInfo(term){
+
+
+let info=document.getElementById("info");
+
+
+if(term=="Mutation"){
+
+info.innerHTML=
+"<h2>Mutation</h2><p>A DNA change that can affect how cells grow.</p>";
+
+}
+
+
+if(term=="Tumor"){
+
+info.innerHTML=
+"<h2>Tumor</h2><p>A group of cells growing uncontrollably.</p>";
+
+}
+
+
+if(term=="Metastasis"){
+
+info.innerHTML=
+"<h2>Metastasis</h2><p>Cancer cells spreading to new locations.</p>";
+
+}
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
